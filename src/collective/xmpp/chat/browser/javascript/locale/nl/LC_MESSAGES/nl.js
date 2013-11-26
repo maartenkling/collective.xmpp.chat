@@ -197,7 +197,7 @@
                 ],
                 "Contacts": [
                     null,
-                    "Contacten"
+                    "Vriendinnen"
                 ],
                 "Online": [
                     null,
@@ -217,15 +217,15 @@
                 ],
                 "Click to add new chat contacts": [
                     null,
-                    "Klik om nieuwe contacten toe te voegen"
+                    "Klik om nieuwe vriendinnen toe te voegen"
                 ],
                 "Add a contact": [
                     null,
-                    "Voeg contact toe"
+                    "Voeg vriendin toe"
                 ],
                 "Contact username": [
                     null,
-                    "Contact gebruikernaam"
+                    "Vriendin gebruikernaam"
                 ],
                 "Add": [
                     null,
@@ -233,7 +233,7 @@
                 ],
                 "Contact name": [
                     null,
-                    "Contact naam"
+                    "Vriendin naam"
                 ],
                 "Search": [
                     null,
@@ -517,39 +517,39 @@
                 ],
                 "This contact is busy": [
                     null,
-                    "Contact is bezet"
+                    "Vriendin is bezet"
                 ],
                 "This contact is online": [
                     null,
-                    "Contact is online"
+                    "Vriendin is online"
                 ],
                 "This contact is offline": [
                     null,
-                    "Contact is offline"
+                    "Vriendin is offline"
                 ],
                 "This contact is unavailable": [
                     null,
-                    "Contact is niet beschikbaar"
+                    "Vriendin is niet beschikbaar"
                 ],
                 "This contact is away for an extended period": [
                     null,
-                    "Contact is afwezig voor lange periode"
+                    "Vriendin is afwezig voor lange periode"
                 ],
                 "This contact is away": [
                     null,
-                    "Conact is afwezig"
+                    "Vriendin is afwezig"
                 ],
                 "Contact requests": [
                     null,
-                    "Contact uitnodiging"
+                    "Vriendin uitnodigingen"
                 ],
                 "My contacts": [
                     null,
-                    "Mijn contacts"
+                    "Mijn vriendinnen"
                 ],
                 "Pending contacts": [
                     null,
-                    "Conacten in afwachting van"
+                    "In afwachting van acceptatie"
                 ],
                 "Custom status": [
                     null,
@@ -605,7 +605,7 @@
                 ],
                 "Online Contacts": [
                     null,
-                    "Online Contacten"
+                    "Chat - Online vriendinnen"
                 ],
                 "%1$s is typing": [
                     null,
@@ -632,6 +632,6 @@
         }
         window.locales.nl = factory(new Jed(translations));
     }
-}(this, function (nl) { 
-    return nl; 
+}(this, function (nl) {
+    return nl;
 }));

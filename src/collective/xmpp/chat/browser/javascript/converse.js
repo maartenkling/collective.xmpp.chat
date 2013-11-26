@@ -648,11 +648,11 @@
                         fullname = item.get('fullname');
                     if (this.$el.is(':visible')) {
                         if (chat_status === 'offline') {
-                            this.insertStatusNotification(fullname+' '+'has gone offline');
+                            this.insertStatusNotification(fullname+' '+'is nu offline');
                         } else if (chat_status === 'away') {
-                            this.insertStatusNotification(fullname+' '+'has gone away');
+                            this.insertStatusNotification(fullname+' '+'is nu afwezig');
                         } else if ((chat_status === 'dnd')) {
-                            this.insertStatusNotification(fullname+' '+'is busy');
+                            this.insertStatusNotification(fullname+' '+'is bezet');
                         } else if (chat_status === 'online') {
                             this.$el.find('div.chat-event').remove();
                         }
@@ -804,8 +804,6 @@
                     '<span id="xmpp-status-holder">'+
                         '<select id="select-xmpp-status" style="display:none">'+
                             '<option value="online">'+__('Online')+'</option>'+
-                            '<option value="dnd">'+__('Busy')+'</option>'+
-                            '<option value="away">'+__('Away')+'</option>'+
                             '<option value="offline">'+__('Offline')+'</option>'+
                         '</select>'+
                     '</span>'+
@@ -836,7 +834,7 @@
                 '<li>'+
                     '<form class="search-xmpp-contact">' +
                         '<input type="text" name="identifier" class="username" placeholder="'+__('Contact name')+'"/>' +
-                        '<button type="submit">'+__('Search')+'</button>' +
+                        '<button class="btn" type="submit">'+__('Search')+'</button>' +
                     '</form>'+
                 '<li>'
             ),
@@ -1968,7 +1966,7 @@
 
             removeContact: function (ev) {
                 ev.preventDefault();
-                var result = confirm("Are you sure you want to remove this contact?");
+                var result = confirm("Weet je zeker dat je deze vriendin wilt verwijderen van de chat?");
                 if (result === true) {
                     var bare_jid = this.model.get('jid');
                     converse.connection.roster.remove(bare_jid, function (iq) {
@@ -2004,10 +2002,10 @@
                 '<a class="remove-xmpp-contact icon-remove" title="'+__('Click to remove this contact')+'" href="#"></a>'),
 
             request_template: _.template('<div>{{ fullname }}</div>' +
-                '<button type="button" class="accept-xmpp-request">' +
-                'Accept</button>' +
-                '<button type="button" class="decline-xmpp-request">' +
-                'Decline</button>' +
+                '<button type="button" class="btn accept-xmpp-request">' +
+                'Accepteer</button>' +
+                '<button type="button" class="btn decline-xmpp-request">' +
+                'Weiger</button>' +
                 ''),
 
             render: function () {

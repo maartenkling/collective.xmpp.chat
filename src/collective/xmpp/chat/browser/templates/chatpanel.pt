@@ -1,6 +1,6 @@
 <div id="chatpanel" i18n:domain="collective.xmpp.chat"
     tal:condition="not: context/portal_membership/isAnonymousUser">
-    <div id="collective-xmpp-chat-data" 
+    <div id="collective-xmpp-chat-data"
         tal:attributes="auto_subscribe view/auto_subscribe;
                         lang view/lang"></div>
     <div id="toggle-controlbox">
