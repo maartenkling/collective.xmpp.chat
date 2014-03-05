@@ -713,7 +713,7 @@
 
             template: _.template(
                 '<div class="chat-head chat-head-chatbox">' +
-                    '<a class="close-chatbox-button icon-close"></a>' +
+                    '<a class="close-chatbox-button glyphicon glyphicon-remove"></a>' +
                     '<a href="{{url}}" target="_blank" class="user">' +
                         '<div class="chat-title"> {{ fullname }} </div>' +
                     '</a>' +
@@ -815,7 +815,7 @@
                     '<dt id="xmpp-contact-search" class="fancy-dropdown">' +
                         '<a class="toggle-xmpp-contact-form" href="#"'+
                             'title="'+__('Click to add new chat contacts')+'">'+
-                        '<span class="icon-plus"></span>'+__('Add a contact')+'</a>' +
+                        '<span class="glyphicon glyphicon-plus"></span>'+__('Add a contact')+'</a>' +
                     '</dt>' +
                     '<dd class="search-xmpp" style="display:none"><ul></ul></dd>' +
                 '</dl>'
@@ -949,7 +949,7 @@
                 '<dd class="available-chatroom">'+
                 '<a class="open-room" data-room-jid="{{jid}}"'+
                     'title="'+__('Click to open this room')+'" href="#">{{name}}</a>'+
-                '<a class="room-info icon-room-info" data-room-jid="{{jid}}"'+
+                '<a class="room-info glyphicon glyphicon-home" data-room-jid="{{jid}}"'+
                     'title="'+__('Show more information on this room')+'" href="#">&nbsp;</a>'+
                 '</dd>'),
 
@@ -1226,7 +1226,7 @@
             template: _.template(
                 '<div class="chat-head oc-chat-head">'+
                     '<ul id="controlbox-tabs"></ul>'+
-                    '<a class="close-chatbox-button icon-close"></a>'+
+                    '<a class="close-chatbox-button glyphicon glyphicon-remove"></a>'+
                 '</div>'+
                 '<div class="controlbox-panes"></div>'
             ),
@@ -1328,8 +1328,8 @@
 
             template: _.template(
                 '<div class="chat-head chat-head-chatroom">' +
-                    '<a class="close-chatbox-button icon-close"></a>' +
-                    '<a class="configure-chatroom-button icon-wrench" style="display:none"></a>' +
+                    '<a class="close-chatbox-button glyphicon glyphicon-remove"></a>' +
+                    '<a class="configure-chatroom-button glyphicon glyphicon-wrench" style="display:none"></a>' +
                     '<div class="chat-title"> {{ name }} </div>' +
                     '<p class="chatroom-topic"><p/>' +
                 '</div>' +
@@ -1993,13 +1993,13 @@
 
             template: _.template(
                 '<a class="open-chat" title="'+__('Click to chat with this contact')+'" href="#">'+
-                    '<span class="icon-{{ chat_status }}" title="{{ status_desc }}"></span>{{ fullname }}'+
+                    '<span class="glyphicon glyphicon-{{ chat_status }}" title="{{ status_desc }}"></span>{{ fullname }}'+
                 '</a>' +
-                '<a class="remove-xmpp-contact icon-remove" title="'+__('Click to remove this contact')+'" href="#"></a>'),
+                '<a class="remove-xmpp-contact glyphicon glyphicon-remove" title="'+__('Click to remove this contact')+'" href="#"></a>'),
 
             pending_template: _.template(
                 '<span>{{ fullname }}</span>' +
-                '<a class="remove-xmpp-contact icon-remove" title="'+__('Click to remove this contact')+'" href="#"></a>'),
+                '<a class="remove-xmpp-contact glyphicon glyphicon-remove" title="'+__('Click to remove this contact')+'" href="#"></a>'),
 
             request_template: _.template('<div>{{ fullname }}</div>' +
                 '<button type="button" class="btn accept-xmpp-request">' +
@@ -2578,7 +2578,7 @@
                         '<span class="icon-{{ chat_status }}"></span>'+
                         '{{ status_message }}' +
                     '</a>' +
-                    '<a class="change-xmpp-status-message icon-pencil" href="#" title="'+__('Click here to write a custom status message')+'"></a>' +
+                    '<a class="change-xmpp-status-message glyphicon glyphicon-pencil" href="#" title="'+__('Click here to write a custom status message')+'"></a>' +
                 '</div>'),
 
             renderStatusChangeForm: function (ev) {
@@ -2644,7 +2644,7 @@
             option_template: _.template(
                 '<li>' +
                     '<a href="#" class="{{ value }}" data-value="{{ value }}">'+
-                        '<span class="icon-{{ value }}"></span>'+
+                        '<span class="glyphicon glyphicon-{{ value }}"></span>'+
                         '{{ text }}'+
                     '</a>' +
                 '</li>'),
